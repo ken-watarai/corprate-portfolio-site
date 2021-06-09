@@ -1,0 +1,228 @@
+@media screen and (max-width: 1200px) {
+ 
+  .inview {
+    height: auto;
+    margin: 0 35px 30px;
+  }
+
+  /* topCopy */
+  .inview:first-child {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .topCopy {
+    padding: 32px 0 40px;
+  }
+	.topCopyEn {
+    font-size: 14px;
+  }
+  .topCopyJa {
+    font-size: 50px;
+  }
+ 
+
+  /* 事業内容 */
+  .businessContent {
+    flex-direction: column-reverse;
+  }
+  .businessContent .detail {
+    padding-bottom: 20px;
+  }
+  .businessContent .numberUnit {
+    margin-bottom: 30px;
+  }
+  .businessContent .num {
+    font-size: 40px;
+  }
+  
+
+
+  /* 会社情報 */
+  .companyInfo {
+    flex-direction: column;
+  }
+
+  #imgInHouse {
+    margin-left: 0;
+    margin-bottom: 30px;
+    height: 400px;
+  }
+  .companyInfo .right h2 {
+    font-size: 24px;
+  }
+  .companyInfo .btn-inview {
+    margin: 0 auto;
+  }
+
+
+  /* 採用情報 */
+  .recruit {
+    background-image: url('../img/recruit.png');
+    background-repeat: no-repeat;
+    background-position: 50% 10%;
+    background-size: contain;
+  }
+  .recruit img {
+    display: none;
+  }
+
+
+  /* 新着情報 */
+  .newsArea {
+    margin-bottom: 30px;
+    width: 85%;
+  }
+  .tab_class {
+    width: calc(100%/3);
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  .newsArea li {
+    flex-wrap: wrap;
+  }
+  
+
+  /*　************************** page ******************************  */
+  /* 事業内容 */
+  .businessPanels {
+    flex-direction: column;
+    align-items: center;
+  }
+  .businessPanel {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .businessPanel h3 img {
+    display: block;
+    margin: 0 auto;
+  }
+  
+
+
+  /*　************************** page ******************************  */
+  /* お問い合わせ */
+  .formContainer {
+    margin: 0 50px;
+  }
+  .form {
+    width: 100%;
+  }
+  .form textarea {
+    width: 90%;
+  }
+  
+}
+
+@media screen and (max-width: 780px) {
+  /*　************************** page ******************************  */
+  /* 会社概要 */
+  .cardHolder {
+    flex-direction: column;
+  }
+  /* メニューリスト */
+  .menu_list {
+    flex-direction: column;
+  }
+  .card {
+    display: block;
+    margin: 0 auto 30px;
+    width: 90%;
+  }
+  .card_img {
+    width: 80%;
+  }
+
+
+  /*　************************** page ******************************  */
+  /* 事業内容 */
+  .BC01 {
+    flex-direction: column;
+  }
+  .BC01 .right {
+    /* position: relative; */
+    margin: 20px auto 0;
+  }
+  
+
+  /*　************************** page ******************************  */
+  /* 採用情報 */
+  #recruitPage {
+    padding: 30px;
+  }
+
+
+  /*　************************** page ******************************  */
+  /* お問い合わせ */
+  .formContainer {
+    margin: 0 20px;
+  }
+  
+  .form input {
+    font-size: 16px;
+    padding: 12px 0;
+    width: 100%;
+    height: 25px;
+  }
+  .form.CPName input {
+    width: 100%;
+  }
+  .form.PNumber input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) { 
+  .inview {
+    margin: 0 18px 30px;
+  }
+
+  /* topCopy */
+  .inview:first-child {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+  }
+
+  .topCopy {
+    padding: 16px 0 20px;
+  }
+	.topCopyEn {
+    font-size: 14px;
+  }
+  .topCopyJa {
+    font-size: 30px;
+  }
+
+
+  /* ***************************************** */
+  
+  /* 事業内容 */
+  .businessPanel h3 img {
+    width: 200px;
+  }
+  
+  
+  /* 新規情報 */
+  .newsContent {
+    margin-top: 10px;
+  }
+
+  /* 採用情報 */
+  .card_img h2 {
+    font-size: 18px;
+  }
+  #recruitPage {
+    background-position: right 50% bottom 0;
+  }
+  #recruitPage h2 {
+    padding-bottom: 250px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  #platform {
+    margin-left: -20px;
+  }
+}

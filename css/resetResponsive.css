@@ -1,0 +1,116 @@
+@media screen and (max-width:1200px) {
+  .standard {
+    display: none;
+  }
+
+
+  /* ハンバーガー */
+  .drawer-hidden {
+    display: none;
+  }
+  /* ハンバーガーアイコンの設置スペース */
+  .drawer-open {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;/* 重なり順を一番上に */
+    cursor: pointer;
+    transition: .3s;
+  }
+  /* ハンバーガーメニューのアイコン */
+  .drawer-open span,
+  .drawer-open span:before,
+  .drawer-open span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background: #333;
+    transition: 0.5s;
+    position: absolute;
+  }
+  /* 上 */
+  .drawer-open span:before {
+    bottom: 8px;
+  }
+  /* 下 */
+  .drawer-open span:after {
+    top: 8px;
+  }
+  /* クリック */
+  #drawer-check:checked ~ .drawer-open {
+    margin-top: -41px;
+  }
+
+  #drawer-check:checked ~ .drawer-open span {
+    background: rgba(255, 255, 255, 0);
+  }
+  #drawer-check:checked ~ .drawer-open span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+  }
+  #drawer-check:checked ~ .drawer-open span::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  /* アイコンがクリックされたらメニューを表示 */
+  #drawer-check:checked ~ .drawer-content {
+    left: 0;/* メニューを画面に入れる */
+  }
+
+  /* ドロップダウンリスト */
+  .item {
+    position: relative;
+  }
+  .item a {
+    display: block;
+    line-height: 60px;
+    margin-left: 40px;
+    padding-left: 20px;
+    background: #ddd;
+    border-bottom: solid 1px #555;
+  }
+  .child {
+    display: block;
+    /* visibility: hidden; */
+    position: absolute;
+    top: 60px;
+    left: 100%;
+    width: 100%;
+    z-index: 100;
+    transition: 0.4s;
+  }
+  .item:hover a {
+    background: #565656;
+    color: #efefef;
+  }
+  .item:hover .child {
+    /* visibility: visible; */
+    left: 20%;
+  }
+
+  
+  /* フッター */
+  footer{
+    padding: 20px 0;
+  }
+  
+  #homeNavInFooter {
+    margin-left: 40px;
+  }
+  
+  .footerNav nav{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 40px;
+  }
+  .footerNav ul {
+    width: 40%;
+  }
+  
+}
