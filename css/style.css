@@ -275,9 +275,9 @@ input:checked + .tab_class + .content_class {
   } 
 }
 /* 遅延指定 */
-.txt01 {animation-delay: 3s;}
-.txt02 {animation-delay: 3.5s;}
-.txt03 {animation-delay: 3.9s;}
+.txt01 {animation-delay: 0.5s;}
+.txt02 {animation-delay: 1.5s;}
+.txt03 {animation-delay: 1.9s;}
 
 
 
